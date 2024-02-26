@@ -52,14 +52,14 @@ nav {
     flex-direction: row;
     justify-content: center;
     cursor: pointer;
+    opacity: 0; 
+    animation: fadeIn 10s forwards; 
 }
 
 .personal-details {
     font-size: 2.5vh;
-    text-decoration:7px underline overline #00ff15 ;
-    font-family: 'Montserrat';
+    text-decoration: 7px underline overline #00ff15;
     font-weight: 100;
-    animation: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,4 +70,10 @@ nav {
     box-shadow: -20px -20px 2px 2px rgba(21, 253, 0, 0.8);
     backdrop-filter: invert(20%);
     border-radius: 1vh;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
