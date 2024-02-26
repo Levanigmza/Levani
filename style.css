@@ -30,36 +30,21 @@ nav {
 }
 
 #startButton {
+    height: 3vh;
     margin-top: 4vh;
     margin-left: 10vh;
-    background: none;
+    background: rgba(18, 85, 12, 0.8);
     display: inline;
     color: deepskyblue;
-    font-weight: 700;
-    border: 1px solid deepskyblue
-}
+    font-weight: 600;
+    border: 1px solid rgb(60, 255, 0);
+    border-radius: 3px;
+    cursor: pointer;
 
-.coins_In_line {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    overflow: hidden;
-    gap: 50vh;
-}
-
-.coin {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
-
-#coin {
-    width: 3vh;
 }
 
 #cv {
-    width: 100%;
+    width: 99%;
     position: relative;
     overflow: hidden;
     height: auto;
@@ -70,14 +55,19 @@ nav {
 }
 
 .personal-details {
-    transition: transform 0.3s ease;
-
+    font-size: 2.5vh;
+    text-decoration:7px underline overline #00ff15 ;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    animation: cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10vh;
-    padding: 20vh;
-    color: white;
-    border: 1px solid springgreen;
+    padding: 10vh;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(228, 253, 0);
+    box-shadow: -20px -20px 2px 2px rgba(21, 253, 0, 0.8);
+    backdrop-filter: invert(20%);
     border-radius: 1vh;
 }
