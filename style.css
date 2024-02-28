@@ -173,8 +173,9 @@ nav {
 }
 
 .contact_details h3 {
-    color: white;
+    color: rgba(212, 176, 14, 0.959);;
     font-size: 18px;
+    font-weight: 500;
 
 }
 
@@ -186,7 +187,7 @@ nav {
 .icons img {
     width: 6vh;
     height: 6vh;
-    background-color: white;
+    background-color: rgba(180, 150, 13, 0.747);
     border-radius: 10.9vh;
     z-index: 2;
     pointer-events: auto;
