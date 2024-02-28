@@ -1,9 +1,45 @@
+html,
 body {
-    margin: 0 auto;
-    background: url('img/wallpaperflare.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow-x: hidden
+    overflow: hidden;
+    background: rgb(0, 12, 20);
+    font: 16px/1.4 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#content {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
 }
 
 nav {
@@ -13,15 +49,22 @@ nav {
 }
 
 .bottom-line {
+
     border-bottom: 1px solid rgba(102, 255, 14, 0.8);
-    position: relative;
-    background: rgb(0, 12, 20);
+    background: url(img/galaxy_3.png);
+    background-repeat: no-repeat;
+    opacity: 0.89;
+    z-index: 1;
+
     box-shadow: -2px 5px 10px 0px rgba(2, 255, 213, 0.8);
     height: 75px;
 }
 
 .bottom-line img {
-    box-shadow: rgba(187, 2, 2, 0.1);
+    opacity:5;
+    z-index: 2;
+
+    box-shadow: -1px 1.5px 1px -1px rgb(19, 19, 19);
     width: 80px;
     height: auto;
     position: absolute;
@@ -32,48 +75,114 @@ nav {
 #startButton {
     height: 3vh;
     margin-top: 4vh;
-    margin-left: 10vh;
+    margin-left: 14vh;
     background: rgba(18, 85, 12, 0.8);
+    color: white;
     display: inline;
-    color: deepskyblue;
     font-weight: 600;
     border: 1px solid rgb(60, 255, 0);
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
 
 }
 
 #cv {
+
     width: 99%;
-    position: relative;
-    overflow: hidden;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    cursor: pointer;
-    opacity: 0; 
-    animation: fadeIn 10s forwards; 
+    opacity: 1;
+    animation: fadeIn 4s forwards;
 }
 
 .personal-details {
     font-size: 2.5vh;
-    text-decoration: 7px underline overline #00ff15;
-    font-weight: 100;
+    text-decoration: 3px underline overline #02ff17;
+    font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10vh;
-    padding: 10vh;
+    padding: 5vw;
     color: rgb(255, 255, 255);
-    border: 2px solid rgb(228, 253, 0);
-    box-shadow: -20px -20px 2px 2px rgba(21, 253, 0, 0.8);
-    backdrop-filter: invert(20%);
+    border: 1.5px solid rgb(236, 252, 14);
+    box-shadow: -20px -20px 2px 1px rgb(41, 248, 22);
+    backdrop-filter: invert(5%);
     border-radius: 1vh;
+    pointer-events: auto;
+
+}
+
+.personal-details h1 {
+    letter-spacing: 1.5px;
 }
 
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
+}
+
+.break {
+    width: 99.9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.break img {
+    width: 80vw;
+    height: 0.4vw;
+}
+
+
+.contact_details {
+    margin: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh
+}
+
+.contact_details h3 {
+    color: white;
+    font-size: 18px;
+
+}
+
+.icons {
+    display: flex;
+    gap: 5vh;
+}
+
+.icons img {
+    width: 6vh;
+    height: 6vh;
+    background-color: white;
+    border-radius: 10.9vh;
+    z-index: 2;
+    pointer-events: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+
+
+@media (max-width: 600px) {
+    .contact_details h3 {
+        font-size: 15px;
+    }
+
+    .icons img {
+        width: 5vh;
+        height: 5vh;
+
+    }
+
 }

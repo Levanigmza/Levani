@@ -7,32 +7,54 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
-    <title>Levani' Gamezardashvili</title>
+    <title>Levani Gamezardashvili</title>
 </head>
 
 
-<body>
-    <header>
-        <nav>
-            <div class="bottom-line">
-                <div class="line"></div>
-                <img id="mario_Start" src="img/output-onlinegiftools (3).gif" alt="Mario starter">
 
-                <img id="mario" src="img/output-onlinegiftools (1).gif" alt="Mario Runner">
-                <button id="startButton"> START</button>
-            </div>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <div class="bottom-line">
+            <div class="line"></div>
+            <img id="mario_Start" src="img/output-onlinegiftools (3).gif" alt="Mario starter">
 
-    <section id="cv" onmousedown="startMove(event)" onmouseup="stopMove()">
+            <img id="mario" src="img/output-onlinegiftools (1).gif" alt="Mario Runner">
+            <button id="startButton"> START</button>
+        </div>
+    </nav>
+</header>
+
+
+<canvas id="fluid-canvas"></canvas>
+<div id="overlay">
+    <section id="cv">
         <div class="personal-details">
             <h1>Levani Gamezardashvili</h1>
-            <!-- <p>Software Engineer in Test</p> -->
         </div>
     </section>
+    <section class="break">
+        <img src="img/color-wheel-icon-2.jpg" alt="dot">
+    </section>
 
-    <script src="app.js"></script>
+    <section class="contact_details">
+        <h3>Contact Me :</h3>
+
+        <div class="icons">
+
+            <a href="https://linkedin.com/in/levani-gamezardashvili-072267171/" target="_blank"><img src="img/291709_logo_linked in_social network_social_social media_icon.png" alt="linkedin"></a>
+            <a href="https://github.com/Levanigmza" target="_blank"><img src="img/291716_github_logo_social network_social_icon.png" alt="github"></a>
+
+        </div>
+    </section>
+    <section class="break">
+        <img src="img/color-wheel-icon-2.jpg" alt="dot">
+    </section>
+</div>
+
+
+<script src="app.js"></script>
+<script src="canvas.js"></script>
+
 </body>
 
 </html>
