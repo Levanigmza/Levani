@@ -94,30 +94,55 @@ nav {
     flex-direction: row;
     justify-content: center;
     opacity: 1;
-    animation: fadeIn 4s forwards;
+    animation:infinite 4s forwards;
 }
 
 .personal-details {
+    background: url("img/output-onlinepngtools.png");
+    background-size: cover;
     font-size: 2.5vh;
-    text-decoration: 3px underline overline #02ff17;
+    text-decoration: 3px underline overline rgba(2, 255, 23, 1); /* Use rgba for full opacity */
     font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10vh;
     padding: 5vw;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 1); /* Use rgba for full opacity */
     border: 1.5px solid rgb(236, 252, 14);
-    box-shadow: -20px -20px 2px 1px rgb(41, 248, 22);
+    box-shadow: -20px -20px 2px 1px rgba(145, 177, 3, 0.575);
     backdrop-filter: invert(5%);
     border-radius: 1vh;
     pointer-events: auto;
+    animation:cubic-bezier(0.445, 0.05, 0.55, 0.95) 4s forwards;
 
 }
+
 
 .personal-details h1 {
     letter-spacing: 1.5px;
 }
+.personal-details::before {
+    border-radius: 2vh;
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(180, 8%, 3%);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+
+.personal-details::before {  
+    transform: scaleX(0);
+    transform-origin: bottom ;
+  }
+  .personal-details:hover::before {
+
+    transform: scaleX(1);
+    transform-origin: bottom ;
+  }
 
 @keyframes fadeIn {
     to {
