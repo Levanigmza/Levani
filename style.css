@@ -61,7 +61,7 @@ nav {
 }
 
 .bottom-line img {
-    opacity:5;
+    opacity: 5;
     z-index: 2;
 
     box-shadow: -1px 1.5px 1px -1px rgb(19, 19, 19);
@@ -74,7 +74,7 @@ nav {
 
 #startButton {
     height: 3vh;
-    margin-top: 4vh;
+    margin-top: 3vh;
     margin-left: 14vh;
     background: rgba(18, 85, 12, 0.8);
     color: white;
@@ -87,34 +87,34 @@ nav {
 }
 
 #cv {
-
+    margin-top: 15vh;
     width: 99%;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
     opacity: 1;
-    animation:infinite 4s forwards;
+    animation: infinite 4s forwards;
 }
 
 .personal-details {
     background: url("img/main_back.png");
     background-size: cover;
     font-size: 2.5vh;
-    text-decoration: 3px underline overline rgba(2, 255, 23, 1); /* Use rgba for full opacity */
+    text-decoration: 3px underline overline rgba(2, 255, 23, 1);
     font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10vh;
     padding: 5vw;
-    color: rgba(255, 255, 255, 1); /* Use rgba for full opacity */
+    color: rgba(255, 255, 255, 1);
     border: 1.5px solid rgb(236, 252, 14);
     box-shadow: -20px -20px 2px 1px rgba(145, 177, 3, 0.575);
     backdrop-filter: invert(5%);
     border-radius: 1vh;
     pointer-events: auto;
-    animation:cubic-bezier(0.445, 0.05, 0.55, 0.95) 4s forwards;
+    animation: cubic-bezier(0.445, 0.05, 0.55, 0.95) 4s forwards;
 
 }
 
@@ -122,27 +122,32 @@ nav {
 .personal-details h1 {
     letter-spacing: 1.5px;
 }
+
 .personal-details::before {
     border-radius: 2vh;
     content: " ";
     display: block;
     position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     inset: 0 0 0 0;
     background: hsl(180, 8%, 3%);
     z-index: -1;
     transition: transform .3s ease;
-  }
+}
 
-.personal-details::before {  
+.personal-details::before {
     transform: scaleX(0);
-    transform-origin: bottom ;
-  }
-  .personal-details:hover::before {
+    transform-origin: bottom;
+}
+
+.personal-details:hover::before {
 
     transform: scaleX(1);
-    transform-origin: bottom ;
-  }
+    transform-origin: bottom;
+}
 
 @keyframes fadeIn {
     to {
@@ -173,7 +178,8 @@ nav {
 }
 
 .contact_details h3 {
-    color: rgba(212, 176, 14, 0.959);;
+    color: rgba(212, 176, 14, 0.959);
+    ;
     font-size: 18px;
     font-weight: 500;
 
@@ -211,4 +217,55 @@ nav {
 
     }
 
+}
+
+
+
+.button_container {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    z-index: 2;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 10vh;
+    cursor: pointer;
+    transition: background-color 800ms, border 800ms, width 800ms;
+    background: #6ddc5b;
+}
+
+.button img {
+    width: 20px;
+    height: auto;
+    transition-duration: 800ms;
+}
+
+.button:hover{
+    display: flex;
+    flex-direction: row;
+    background-color: #2cdb11;
+    border-color: #6ddc5b;
+    width: 220px;
+}
+
+.read_more_button_text {
+    text-align: right;
+    opacity: 0;
+    transition: opacity 800ms;
+    color: black;
+    position: absolute;
+    transform: translate(-100%, -50%);
+}
+
+.button:hover .read_more_button_text {
+    opacity: 1;
 }
