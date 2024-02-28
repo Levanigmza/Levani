@@ -222,50 +222,66 @@ nav {
 
 
 .button_container {
-    margin-top: 5vh;
+    margin-top: 4cqmin;
     display: flex;
     align-items: center;
-}
-
-.button {
-    z-index: 2;
-    pointer-events: auto;
+  }
+  
+  .button {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    pointer-events: auto;
+    z-index: 2;
     height: 50px;
     width: 50px;
     border: none;
-    border-radius: 10vh;
-    cursor: pointer;
-    transition: background-color 800ms, border 800ms, width 800ms;
     background: #6ddc5b;
-}
-
-.button img {
+    transition: width 300ms;
+  }
+  
+  .icon {
+    transition-duration: 800ms;
+    display: flex;
+    position: relative;
+    right: 23px;
+  }
+  .button .icon img {
     width: 20px;
     height: auto;
-    transition-duration: 800ms;
-}
-
-.button:hover{
-    display: flex;
-    flex-direction: row;
-    background-color: #2cdb11;
-    border-color: #6ddc5b;
-    width: 220px;
-}
-
-.read_more_button_text {
-    text-align: right;
+  }
+  
+  .read_more_button_text {
+    pointer-events: none;
+    transform: translateX(-170px);
     opacity: 0;
-    transition: opacity 800ms;
-    color: black;
-    position: absolute;
-    transform: translate(-100%, -50%);
-}
-
-.button:hover .read_more_button_text {
-    opacity: 1;
-}
+    color: #000;
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    width: 220px;
+  }
+  .button:hover .read_more_button_text {
+    animation: animateButton 800ms forwards ease;
+  }
+  .button:hover .icon {
+    animation: animateIcon 300ms forwards ease;
+  }
+  
+  @keyframes animateButton {
+    100% {
+      opacity: 1;
+      transform: translateX(-10px);
+    }
+  }
+  @keyframes animateIcon {
+    100% {
+      right: -10px;
+    }
+  }
