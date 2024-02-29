@@ -594,13 +594,10 @@ input:checked+label:after {
     transform: translateX(-100%);
 }
 
-label:active:after {
-    width: 40px;
-}
 
 
 .canvas_start {
-    margin: 1vh;
+    margin: 1vh 0;
     width: 100%;
     display: flex;
     flex-direction: row;
