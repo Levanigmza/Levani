@@ -2,7 +2,6 @@ html,
 body {
     overflow: visible;
     background: rgb(0, 12, 20);
-    font: 16px/1.4 'Lato', sans-serif;
 }
 
 body {
@@ -10,6 +9,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
+    font-family: 'Montserrat','Arial Narrow', Arial, sans-serif;
 }
 
 canvas {
@@ -121,6 +121,8 @@ nav {
 
 .personal-details h1 {
     letter-spacing: 1.5px;
+    font-family: 'Montserrat';
+
 }
 
 .personal-details::before {
@@ -179,9 +181,9 @@ nav {
 
 .contact_details h3 {
     color: rgba(212, 176, 14, 0.959);
-    ;
+    
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
 
 }
 
@@ -198,6 +200,7 @@ nav {
     z-index: 2;
     pointer-events: auto;
     transition: transform 0.2s ease-in-out;
+
 }
 
 .icons img:hover {
@@ -291,8 +294,8 @@ nav {
 
 .skilsSection {
     text-align: center;
-    margin: 15vh;
-    color: hwb(81 1% 0%);
+    margin-top: 10vh;
+    color: rgba(212, 176, 14, 0.959);
 }
 
 .skills-container {
@@ -331,17 +334,25 @@ nav {
 }
 
 .skill-card {
+    pointer-events: auto;
+
     background-color: #1b58ff36;
     border-radius: 10px;
     padding: 15px;
-    margin: 5vh;
+    margin: 4vh;
     width: 30vh;
     text-align: center;
     box-shadow: -20px -20px 2px 1px rgba(145, 177, 3, 0.575);
+    transition: transform 0.2s ease-in-out;
+
+}
+.skill-card:hover {
+    transform: scale(1.2);
+    box-shadow: none;
 }
 
 .skill-card h3 {
-    color: hwb(81 1% 0%);
+    color: rgba(212, 176, 14, 0.959);
 }
 
 
@@ -369,7 +380,7 @@ nav {
 .progress-value11 {
     box-shadow: 0 10px 40px -10px #130b0b;
     border-radius: 100px;
-    background-color: #04ff19;
+    background-color: #15aa22;
     height: 20px;
     width: 0;
 }

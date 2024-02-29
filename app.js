@@ -4,7 +4,7 @@ let mario = document.getElementById('mario');
 let start_button = document.getElementById('startButton');
 
 
-const maxPosition = window.innerWidth > 2560 ? 2000 : window.innerWidth;
+const maxPosition = window.innerWidth > 2360 ? 2000 : window.innerWidth-70;
 let isRunning = false;
 
 document.addEventListener("DOMContentLoaded", function () {
