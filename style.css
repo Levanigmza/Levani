@@ -14,7 +14,7 @@ body {
 
 canvas {
     width: 100%;
-    height: 100%;
+    height: 90%;
     display: block;
 
 }
@@ -306,6 +306,7 @@ nav {
 
 
 .skilsSection {
+    position:relative;
     text-align: center;
     margin-top: 12vh;
     color: rgba(212, 176, 14, 0.959);
@@ -371,7 +372,7 @@ nav {
 
 
 .progress {
-    background: rgba(133, 13, 13, 0.521);
+    background: rgba(214, 116, 116, 0.521);
     justify-content: flex-start;
     border-radius: 100px;
     align-items: center;
