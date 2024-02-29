@@ -12,59 +12,135 @@
 </head>
 
 
+<body>
+    <header>
+        <nav>
+            <div class="bottom-line">
+                <div class="line"></div>
+                <img id="mario_Start" src="img/output-onlinegiftools (3).gif" alt="Mario starter">
 
-<header>
-    <nav>
-        <div class="bottom-line">
-            <div class="line"></div>
-            <img id="mario_Start" src="img/output-onlinegiftools (3).gif" alt="Mario starter">
-
-            <img id="mario" src="img/output-onlinegiftools (1).gif" alt="Mario Runner">
-            <button id="startButton"> START</button>
-        </div>
-    </nav>
-</header>
+                <img id="mario" src="img/output-onlinegiftools (1).gif" alt="Mario Runner">
+                <button id="startButton"> START</button>
+            </div>
+        </nav>
+    </header>
 
 
-<canvas id="fluid-canvas"></canvas>
-<div id="overlay">
-    <section id="cv">
-        <div class="personal-details">
-            <h1>Levani Gamezardashvili</h1>
-        </div>
-    </section>
-    <section class="break">
-        <img src="img/color-wheel-icon-2.jpg" alt="dot">
-    </section>
+    <canvas id="fluid-canvas"></canvas>
+    <div id="overlay">
+        <section id="cv">
+            <div class="personal-details">
+                <h1>Levani Gamezardashvili</h1>
+            </div>
+        </section>
+        <section class="break">
+            <img src="img/color-wheel-icon-2.jpg" alt="dot">
+        </section>
 
-    <section class="contact_details">
-        <h3>Contact Me :</h3>
-        <div class="icons">
-            <a href="https://linkedin.com/in/levani-gamezardashvili-072267171/" target="_blank"><img
-                    src="img/291709_logo_linked in_social network_social_social media_icon.png" alt="linkedin"></a>
-            <a href="https://github.com/Levanigmza" target="_blank"><img
-                    src="img/291716_github_logo_social network_social_icon.png" alt="github"></a>
-        </div>
-    </section>
-    <section class="break">
-        <img src="img/color-wheel-icon-2.jpg" alt="dot">
-    </section>
+        <section class="contact_details">
+            <h3>Pages :</h3>
+            <div class="icons">
+                <a href="https://linkedin.com/in/levani-gamezardashvili-072267171/" target="_blank"><img
+                        src="img/291709_logo_linked in_social network_social_social media_icon.png" alt="linkedin"></a>
+                <a href="https://github.com/Levanigmza" target="_blank"><img
+                        src="img/291716_github_logo_social network_social_icon.png" alt="github"></a>
+            </div>
+        </section>
+        <section class="break">
+            <img src="img/color-wheel-icon-2.jpg" alt="dot">
+        </section>
 
-    <div class="button_container">
-        <div class="button">
-            <div class="read_more_button_text">Read more</div>
-            <div class ="icon">
-                <img class="arrow-icon" src="img/arrow.png" alt="Read More Arrow">
+        <div class="button_container">
+            <div class="button" onclick="scrollToSection('.skilsSection')">
+                <div class="read_more_button_text">Read more</div>
+                <div class="icon">
+                    <img class="arrow-icon" src="img/arrow.png" alt="Read More Arrow">
+                </div>
             </div>
         </div>
+        <section class="skilsSection">
+            <h1>soft development skills</h1>
+            <div class="skills-container">
+                <div class="category">
+                    <h2>Front-end</h2>
+                    <div class="skill-card">
+                        <h3>HTML</h3>
+                        <div class="progress">
+                            <div class="progress-value1"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>CSS / Scss / Bootsrap</h3>
+                        <div class="progress">
+                            <div class="progress-value2"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Js / Ts</h3>
+                        <div class="progress">
+                            <div class="progress-value3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <h2>Back-end</h2>
+                    <div class="skill-card">
+                        <h3>C# .NET</h3>
+                        <div class="progress">
+                            <div class="progress-value4"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Entity Framework</h3>
+                        <div class="progress">
+                            <div class="progress-value5"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Oracle / Mssql</h3>
+                        <div class="progress">
+                            <div class="progress-value6"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="category">
+                    <h2>Test Automation</h2>
+                    <div class="skill-card">
+                        <h3>Java</h3>
+                        <div class="progress">
+                            <div class="progress-value7"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Selenide / Selenium</h3>
+                        <div class="progress">
+                            <div class="progress-value8"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>TestNG</h3>
+                        <div class="progress">
+                            <div class="progress-value9"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Appium</h3>
+                        <div class="progress">
+                            <div class="progress-value10"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Rest API</h3>
+                        <div class="progress">
+                            <div class="progress-value11"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    
-
-</div>
-
-
-<script src="app.js"></script>
-<script src="canvas.js"></script>
+    <script src="app.js"></script>
+    <script src="canvas.js"></script>
 
 </body>
 

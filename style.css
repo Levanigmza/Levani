@@ -1,6 +1,6 @@
 html,
 body {
-    overflow: hidden;
+    overflow: visible;
     background: rgb(0, 12, 20);
     font: 16px/1.4 'Lato', sans-serif;
 }
@@ -24,7 +24,7 @@ canvas {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    min-height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -191,8 +191,8 @@ nav {
 }
 
 .icons img {
-    width: 6vh;
-    height: 6vh;
+    width: 5vh;
+    height: 5vh;
     background-color: rgba(180, 150, 13, 0.747);
     border-radius: 10.9vh;
     z-index: 2;
@@ -212,22 +212,20 @@ nav {
     }
 
     .icons img {
-        width: 5vh;
-        height: 5vh;
+        width: 4.2vh;
+        height: 4.2vh;
 
     }
 
 }
 
-
-
 .button_container {
-    margin-top: 4cqmin;
+    margin-top: 7vh;
     display: flex;
     align-items: center;
-  }
-  
-  .button {
+}
+
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -240,20 +238,21 @@ nav {
     border: none;
     background: #6ddc5b;
     transition: width 300ms;
-  }
-  
-  .icon {
+}
+
+.icon {
     transition-duration: 800ms;
     display: flex;
     position: relative;
     right: 23px;
-  }
-  .button .icon img {
+}
+
+.button .icon img {
     width: 20px;
     height: auto;
-  }
-  
-  .read_more_button_text {
+}
+
+.read_more_button_text {
     pointer-events: none;
     transform: translateX(-170px);
     opacity: 0;
@@ -262,26 +261,270 @@ nav {
     font-family: sans-serif;
     letter-spacing: 1px;
     cursor: pointer;
-  }
-  
-  .button:hover {
+}
+
+.button:hover {
     width: 220px;
-  }
-  .button:hover .read_more_button_text {
+}
+
+.button:hover .read_more_button_text {
     animation: animateButton 800ms forwards ease;
-  }
-  .button:hover .icon {
+}
+
+.button:hover .icon {
     animation: animateIcon 300ms forwards ease;
-  }
-  
-  @keyframes animateButton {
+}
+
+@keyframes animateButton {
     100% {
-      opacity: 1;
-      transform: translateX(-10px);
+        opacity: 1;
+        transform: translateX(-10px);
     }
-  }
-  @keyframes animateIcon {
+}
+
+@keyframes animateIcon {
     100% {
-      right: -10px;
+        right: -10px;
     }
-  }
+}
+
+
+.skilsSection {
+    text-align: center;
+    margin: 15vh;
+    color: hwb(81 1% 0%);
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    color: #299414;
+    gap: 7vh;
+}
+
+.category h2 {
+    margin: 5vh;
+}
+
+
+@media (max-width: 1200px) {
+    .skills-container {
+        gap: 1vh;
+    }
+
+
+}
+
+@media (max-width: 955px) {
+
+    .skills-container {
+        flex-direction: column;
+
+    }
+
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.skill-card {
+    background-color: #1b58ff36;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5vh;
+    width: 30vh;
+    text-align: center;
+    box-shadow: -20px -20px 2px 1px rgba(145, 177, 3, 0.575);
+}
+
+.skill-card h3 {
+    color: hwb(81 1% 0%);
+}
+
+
+.progress {
+    background: rgba(133, 13, 13, 0.521);
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 22px;
+    width: 90%;
+}
+
+.progress-value1,
+.progress-value2,
+.progress-value3,
+.progress-value4,
+.progress-value5,
+.progress-value6,
+.progress-value7,
+.progress-value8,
+.progress-value9,
+.progress-value10,
+.progress-value11 {
+    box-shadow: 0 10px 40px -10px #130b0b;
+    border-radius: 100px;
+    background-color: #04ff19;
+    height: 20px;
+    width: 0;
+}
+
+.progress-value1 {
+    animation: load1 4s normal forwards;
+}
+
+.progress-value2 {
+    animation: load2 4s normal forwards;
+}
+
+.progress-value3 {
+    animation: load3 4s normal forwards;
+}
+
+.progress-value4 {
+    animation: load4 4s normal forwards;
+}
+
+.progress-value5 {
+    animation: load5 4s normal forwards;
+}
+
+.progress-value6 {
+    animation: load6 4s normal forwards;
+}
+
+.progress-value7 {
+    animation: load7 4s normal forwards;
+}
+
+.progress-value8 {
+    animation: load8 4s normal forwards;
+}
+
+.progress-value9 {
+    animation: load9 4s normal forwards;
+}
+
+.progress-value10 {
+    animation: load10 4s normal forwards;
+}
+
+.progress-value11 {
+    animation: load11 4s normal forwards;
+}
+
+
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes load3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes load4 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes load5 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes load6 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes load7 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes load8 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes load9 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes load10 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes load11 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75%;
+    }
+}

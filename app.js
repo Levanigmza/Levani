@@ -48,4 +48,8 @@ document.getElementById('startButton').addEventListener('click', function () {
 var overlayDiv = document.createElement('div');
 document.getElementById('overlay').appendChild(overlayDiv);
 
-
+function scrollToSection(sectionId) {
+    document.querySelector(sectionId).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
