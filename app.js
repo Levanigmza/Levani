@@ -4,7 +4,7 @@ let mario = document.getElementById('mario');
 let start_button = document.getElementById('startButton');
 
 
-const maxPosition = window.innerWidth > 2360 ? 2000 : window.innerWidth-70;
+const maxPosition = window.innerWidth > 2360 ? 2000 : window.innerWidth - 70;
 let isRunning = false;
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -53,3 +53,18 @@ function scrollToSection(sectionId) {
         behavior: 'smooth'
     });
 }
+
+let switchElement = document.getElementById('switch');
+let canvasElement = document.getElementById('fluid-canvas');
+
+if (!switchElement.checked) {
+    canvasElement.style.display = 'none'; 
+}
+
+switchElement.addEventListener('change', function () {
+    if (switchElement.checked) {
+        canvasElement.style.display = 'block'; 
+    } else {
+        canvasElement.style.display = 'none';  
+    }
+});

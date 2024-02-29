@@ -9,7 +9,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    font-family: 'Montserrat','Arial Narrow', Arial, sans-serif;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
 }
 
 canvas {
@@ -73,7 +73,7 @@ nav {
 }
 
 #startButton {
-    height: 3vh;
+    height: 3.5vh;
     margin-top: 3vh;
     margin-left: 14vh;
     background: rgba(18, 85, 12, 0.8);
@@ -81,7 +81,7 @@ nav {
     display: inline;
     font-weight: 600;
     border: 1px solid rgb(60, 255, 0);
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 
 }
@@ -122,6 +122,18 @@ nav {
 .personal-details h1 {
     letter-spacing: 1.5px;
     font-family: 'Montserrat';
+
+}
+@media (max-width: 600px) {
+    .personal-details{
+        font-size: 2.3vh;
+
+    }
+
+    .personal-details h1 {
+        letter-spacing: 1.3px;
+
+    }
 
 }
 
@@ -181,7 +193,7 @@ nav {
 
 .contact_details h3 {
     color: rgba(212, 176, 14, 0.959);
-    
+
     font-size: 18px;
     font-weight: 600;
 
@@ -338,14 +350,15 @@ nav {
 
     background-color: #1b58ff36;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     margin: 4vh;
-    width: 30vh;
+    width: 27vh;
     text-align: center;
     box-shadow: -20px -20px 2px 1px rgba(145, 177, 3, 0.575);
     transition: transform 0.2s ease-in-out;
 
 }
+
 .skill-card:hover {
     transform: scale(1.2);
     box-shadow: none;
@@ -538,4 +551,62 @@ nav {
     100% {
         width: 75%;
     }
+}
+
+
+
+input[type=checkbox] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 60px;
+    height: 30px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    left: 1px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked+label {
+    background: #bada55;
+}
+
+input:checked+label:after {
+    left: calc(100% - 1px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 40px;
+}
+
+
+.canvas_start {
+    margin: 1vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas_start p{
+    font-weight: 600;
+    color: rgba(212, 176, 14, 0.959);
 }
