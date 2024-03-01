@@ -1,7 +1,8 @@
 html,
 body {
     overflow: visible;
-    background: rgb(0, 12, 20);
+    /* background: rgb(0, 12, 20); */
+    background: #000814;
 }
 
 body {
@@ -50,13 +51,14 @@ nav {
 
 .bottom-line {
 
-    border-bottom: 1px solid rgba(102, 255, 14, 0.8);
+    /* border-bottom: 1px solid rgba(102, 255, 14, 0.8); */
     background: url(img/galaxy_3.png);
     background-repeat: no-repeat;
     opacity: 0.89;
     z-index: 1;
 
-    box-shadow: -2px 5px 10px 0px rgba(2, 255, 213, 0.8);
+    /* box-shadow: -2px 5px 10px 0px rgba(2, 255, 213, 0.8); */
+    box-shadow: -2px 5px 15px 0px #003566;
     height: 75px;
 }
 
@@ -102,7 +104,8 @@ nav {
     background: url("img/main_back.png");
     background-size: cover;
     font-size: 2.5vh;
-    text-decoration: 3px underline overline rgba(2, 255, 23, 1);
+    /* text-decoration: 3px underline overline rgba(2, 255, 23, 1); */
+    text-decoration: 3px underline overline #ffd60a;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -110,8 +113,10 @@ nav {
     margin: 10vh;
     padding: 5vw;
     color: rgba(255, 255, 255, 1);
-    border: 1.5px solid rgb(236, 252, 14);
-    box-shadow: -20px -20px 2px 1px rgba(145, 177, 3, 0.575);
+    /* border: 1.5px solid rgb(236, 252, 14); */
+    border: 1.5px solid #ffd60a;
+    /* box-shadow: -20px -20px 2px 1px rgba(145, 177, 3, 0.575); */
+    box-shadow: -15px -15px 10px 1px rgba(255, 214, 10, .1);
     backdrop-filter: invert(5%);
     border-radius: 1vh;
     pointer-events: auto;
@@ -123,10 +128,10 @@ nav {
 .personal-details h1 {
     letter-spacing: 1.5px;
     font-family: 'Montserrat';
-
 }
+
 @media (max-width: 600px) {
-    .personal-details{
+    .personal-details {
         font-size: 2.3vh;
 
     }
@@ -156,6 +161,7 @@ nav {
 .personal-details::before {
     transform: scaleX(0);
     transform-origin: bottom;
+    
 }
 
 .personal-details:hover::before {
@@ -193,7 +199,8 @@ nav {
 }
 
 .contact_details h3 {
-    color: rgba(212, 176, 14, 0.959);
+    /* color: rgba(212, 176, 14, 0.959); */
+    color: #ffc300;
 
     font-size: 18px;
     font-weight: 600;
@@ -208,8 +215,9 @@ nav {
 .icons img {
     width: 5vh;
     height: 5vh;
-    background-color: rgba(180, 150, 13, 0.747);
-    border-radius: 10.9vh;
+    /* background-color: rgba(180, 150, 13, 0.747); */
+    background-color: #fff;
+    border-radius: 50%;
     z-index: 2;
     pointer-events: auto;
     transition: transform 0.2s ease-in-out;
@@ -306,10 +314,11 @@ nav {
 
 
 .skilsSection {
-    position:relative;
+    position: relative;
     text-align: center;
     margin-top: 12vh;
-    color: rgba(212, 176, 14, 0.959);
+    /* color: rgba(212, 176, 14, 0.959); */
+    color: #ffc300;
 }
 
 .skills-container {
@@ -322,7 +331,9 @@ nav {
 }
 
 .category h2 {
+    color: #299414;
     margin: 5vh;
+    color: #bd34c9;
 }
 
 
@@ -349,30 +360,33 @@ nav {
 
 .skill-card {
     pointer-events: auto;
-
-    background-color: #1b58ff36;
+    cursor: pointer;
+    /* background-color: #1b58ff36; */
+    background-color: #001d3d;
     border-radius: 10px;
     padding: 10px;
     margin: 4vh;
     width: 27vh;
     text-align: center;
-    box-shadow: -20px -20px 2px 1px rgba(145, 177, 3, 0.575);
-    transition: transform 0.2s ease-in-out;
+    /* box-shadow: -20px -20px 2px 1px rgba(145, 177, 3, 0.575); */
+    box-shadow: -10px -10px 2px 1px #00356621;
+    transition: transform 300ms ease-in-out, box-shadow 300ms ease-in-out;
 
 }
 
 .skill-card:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     box-shadow: none;
 }
 
 .skill-card h3 {
-    color: rgba(212, 176, 14, 0.959);
+    /* color: rgb(212, 176, 14); */
+    color: #ffc300;
 }
 
 
 .progress {
-    background: rgba(214, 116, 116, 0.521);
+    background: rgba(255, 255, 255, 0.3);
     justify-content: flex-start;
     border-radius: 100px;
     align-items: center;
@@ -395,8 +409,9 @@ nav {
 .progress-value11 {
     box-shadow: 0 10px 40px -10px #130b0b;
     border-radius: 100px;
-    background-color: #15aa22;
-    height: 20px;
+    /* background-color: #15aa22; */
+    background-color: #bd34c9;
+    height: 22px;
     width: 0;
 }
 
@@ -605,7 +620,7 @@ input:checked+label:after {
     align-items: center;
 }
 
-.canvas_start p{
+.canvas_start p {
     font-weight: 600;
     color: rgba(212, 176, 14, 0.959);
 }
