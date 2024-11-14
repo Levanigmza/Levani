@@ -22,7 +22,7 @@
                 <img id="mario" src="img/output-onlinegiftools (1).gif" alt="Mario Runner">
                 <button id="startButton"> START</button>
             </div>
-            <div class = "canvas_start">
+            <div class="canvas_start">
                 <p>Turn it on</p>
                 <input type="checkbox" id="switch" />
                 <label for="switch">Toggle</label>
@@ -56,18 +56,191 @@
         </section>
 
         <div class="button_container">
-            <div class="button" onclick="scrollToSection('.skilsSection')">
+            <div class="button" onclick="scrollToSection('.portfolio')">
                 <div class="read_more_button_text">Read more</div>
                 <div class="icon">
                     <img class="arrow-icon" src="img/arrow.png" alt="Read More Arrow">
                 </div>
             </div>
         </div>
-        <section class="skilsSection">
-            <h1>soft development skills</h1>
+
+        <section class="portfolio">
+            <div class="about-me">
+                <h1>About Me</h1>
+                <p>Hello, I'm Levani Gamezardashvili, software developer with a strong focus on both
+                    front-end and back-end development, as well as test automation. I am focused on creating efficient,
+                    scalable solutions and enjoy working in fast-paced, collaborative teams where I can continue to
+                    learn and grow professionally.</p>
+
+                <p>Currently, I am a Full-stack Developer at the <strong style="color: #ffc300;;">Georgia Revenue
+                        Service • შემოსავლების
+                        სამსახური</strong>, where I specialize in building robust applications to streamline service
+                    operations and enhance user experiences. My expertise spans across various technologies, and I am
+                    always eager to explore new advancements in software development.</p>
+
+                <p>Feel free to connect with me on <a href="https://linkedin.com/in/levani-gamezardashvili-072267171/"
+                        target="_blank">LinkedIn</a> for opportunities or collaborations.</p>
+
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:levani.gmz.14@gmail.com">levani.gmz.14@gmail.com</a></p>
+                    <p><strong>Current Position:</strong> Full-stack Developer at Georgia Revenue Service</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="experienceSection">
+            <h1>Experience</h1>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <img src="img/RevenueService.jpg" alt="Georgia Revenue Service Logo" class="company-icon">
+                    <div class="link">
+                        <p>Georgia Revenue Service</p>
+                        <p> Tbilisi, Georgia</p>
+                        <a href="https://www.rs.ge" target="_blank"
+                            style="color: rgb(182, 182, 247); text-decoration: underline; ;">www.rs.ge</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="position">
+                        <h3>Full-stack Developer</h3>
+                        <p><strong>Duration :</strong> Jul 2024 - Present</p>
+                        <p><strong>Technologies and activities:</strong> Angular ; Javascript ; ASP.NET Core ; .aspx ;
+                            Orchard ;
+                            Oracle SQL ; MsSQL</p>
+                    </div>
+                    <hr>
+
+                    <div class="position">
+                        <h3>Test Automation Engineer</h3>
+                        <p><strong>Duration :</strong> Jul 2023 - Jul 2024</p>
+                        <p><strong>Technologies and activities:</strong> Java , Selenium , Appium , TestNG , Oracle SQL
+                        </p>
+                    </div>
+                    <hr>
+
+                    <div class="position">
+                        <h3>Software QA Engineer</h3>
+                        <p><strong>Duration :</strong> Jan 2022 - Sep 2023</p>
+                        <p><strong>Technologies and activities : </strong> Api Testing, Postman, Oracle SQL , Software
+                            Quality
+                            Assurance</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <img src="img/adjarabet_logo.jpg" alt="Ministry of Finance Logo" class="company-icon">
+                    <div class="link">
+                        <p>Adjarabet.com </p>
+                        <p>(Flutter Entertaiment)</p>
+                        <p> Tbilisi, Georgia</p>
+                        <a href="https://www.adjarabet.com" target="_blank"
+                            style="color: rgb(182, 182, 247); text-decoration: underline; ;">www.adjarabet.com</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="position">
+                        <h3> Network and Service Operations officer</h3>
+                        <p><strong>Duration :</strong> Dec 2020 - Jan 2022</p>
+                        <p><strong>Technologies and activities:</strong> Zabbix ; Solarwinds ; Grafana; New Relic ;
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <img src="img/SKYTEL.png" alt="Ministry of Finance Logo" class="company-icon">
+                    <div class="link">
+                        <p>SKYTEL</p>
+                        <p> Tbilisi, Georgia</p>
+                        <a href="https://www.skytel.ge" target="_blank"
+                            style="color: rgb(182, 182, 247); text-decoration: underline; ;">www.skytel.ge</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="position">
+                        <h3>ISP Network Troubleshooter</h3>
+                        <p><strong>Duration :</strong> May 2019 - Dec 2020</p>
+                        <p><strong>Technologies and activities:</strong> Mikrotik ; Ubiquiti Networks ; System
+                            Monitoring; Technical Support ; Customer Service;
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="ProjectsSection">
+            <h1>Projects</h1>
+            <div class="certification-card">
+                <h2>Hospital Website (appointment System)</h2>
+                <p><strong>description:</strong>This is an application for clinics,
+                    where it is possible for users to book a visit to a doctor at a specific time,
+                    there are three User Roles, Admin - who can do everything, Doctor - who can accept or refuse the
+                    patient's appointment,
+                    and User who can make reservations </p>
+                    <p><strong>Technologies:</strong>Angular 16 , .Net Core Api , Mssql, Entity Framework , Jwt , </p>
+                    <div class="urls">
+                        
+                        <a href="https://github.com/Levanigmza/Hospital_Appointments_Angular">Github - Angular</a>
+                        <a href="https://github.com/Levanigmza/HospitalWebsite_Api">Api</a>
+                    </div>
+                    
+                </div>
+                <div class="certification-card">
+                    <h2>Employee Managment App</h2>
+                    <p><strong>description:</strong>Management of employee data, add or change Employee Api, (via Ado.net - oracle Package)</p>
+                    <p><strong>Technologies ID:</strong> Angular ; .Net Core ; Ado.Net ; Oracle </p>
+                    <div class="urls">
+                        <a href="https://github.com/Levanigmza/Employees_Angular">Github - Angular</a>
+                        <a href="https://github.com/Levanigmza/Employees_Api">Api</a>
+                    </div>
+                </div>
+            <div class="certification-card">
+                <h2>GuessColor - Game</h2>
+                <p><strong>description:</strong>Simple web Game, to Guess colors from displayed RGB code</p>
+                <p><strong>Technologies:</strong>Vanilla JavaScript</p>
+                <div class="urls">
+                    <a href="https://github.com/Levanigmza/GuessColor">Github</a>
+                    <a href="https://levanigmza.github.io/GuessColor/">Publish (gh-pages)</a>
+                </div>
+            </div>
+            <div class="certification-card">
+                <h2>Landing Page</h2>
+                <p><strong>description:</strong> Responsive landing page, for all type of devices, (mobile, Tablet ,
+                    leptop, desktop)</p>
+                <p><strong>Technologies ID:</strong> Html ; Scss</p>
+                <div class="urls">
+
+                    <a href="https://github.com/Levanigmza/Landing_Page_Kit">Github</a>
+                    <a href="https://levanigmza.github.io/Landing_Page_Kit/">Publish (gh-pages)</a>
+                </div>
+
+            </div>
+            <div class="certification-card">
+                <h2>Landing Page</h2>
+                <p><strong>description:</strong> Responsive landing page, for all type of devices, (mobile, Tablet ,
+                    leptop, desktop)</p>
+                <p><strong>Technologies ID:</strong> Html ; css ; Scss ; js </p>
+                <div class="urls">
+
+                    <a href="https://github.com/Levanigmza/Landing_PageTravel">Github</a>
+                    <a href="https://levanigmza.github.io/Landing_PageTravel/">Publish (gh-pages)</a>
+                </div>
+
+            </div>
+
+        </section>
+        <div class="skilsSection">
+            <h1>Software Development Skills</h1>
             <div class="skills-container">
+                <!-- Front-End Development Section -->
                 <div class="category">
-                    <h2>Front-end</h2>
+                    <h2>Front-end Development</h2>
+                    <!-- Skill Cards for Front-End -->
                     <div class="skill-card">
                         <h3>HTML</h3>
                         <div class="progress">
@@ -75,20 +248,22 @@
                         </div>
                     </div>
                     <div class="skill-card">
-                        <h3>CSS / Scss / Bootsrap</h3>
+                        <h3>CSS / SCSS / Bootstrap</h3>
                         <div class="progress">
                             <div class="progress-value2"></div>
                         </div>
                     </div>
                     <div class="skill-card">
-                        <h3>Js / Ts</h3>
+                        <h3>JavaScript / TypeScript</h3>
                         <div class="progress">
                             <div class="progress-value3"></div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Back-End Development Section -->
                 <div class="category">
-                    <h2>Back-end</h2>
+                    <h2>Back-end Development</h2>
                     <div class="skill-card">
                         <h3>C# .NET</h3>
                         <div class="progress">
@@ -102,12 +277,14 @@
                         </div>
                     </div>
                     <div class="skill-card">
-                        <h3>Oracle / Ms Sql</h3>
+                        <h3>Oracle / MS SQL</h3>
                         <div class="progress">
                             <div class="progress-value6"></div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Test Automation Section -->
                 <div class="category">
                     <h2>Test Automation</h2>
                     <div class="skill-card">
@@ -135,14 +312,70 @@
                         </div>
                     </div>
                     <div class="skill-card">
-                        <h3>Rest API</h3>
+                        <h3>REST API</h3>
                         <div class="progress">
                             <div class="progress-value11"></div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <section class="educationSection">
+            <h1>Education</h1>
+            <div class="education-card">
+                <h2>Bachelor's in Informatics</h2>
+                <p class="institution">Georgian Technical University</p>
+                <p><strong>Duration:</strong> Jan 2021 - Jul 2023</p>
+            </div>
+            <div class="education-card">
+                <h2>Bachelor's in Web Development</h2>
+                <p class="institution">IT Academy Step Georgia</p>
+                <p><strong>Duration:</strong> Nov 2023 - Jun 2024</p>
+                <p><strong>Skills:</strong> Angular (17) , JavaScript, CSS , Scss , Bootstrap</p>
+
+            </div>
         </section>
+
+        <section class="certificationsSection">
+            <h1>Licenses & Certifications</h1>
+            <div class="certificatesgrid">
+
+                <div class="certification-card">
+                    <h2>SQL (Advanced)</h2>
+                    <p class="institution">HackerRank</p>
+                    <p><strong>Issued:</strong> Mar 2024</p>
+                    <p><strong>Credential ID:</strong> cbbb5e88a6d3</p>
+                    <a href="https://www.hackerrank.com/certificates/cbbb5e88a6d3">Certficate</a>
+                </div>
+                <div class="certification-card">
+                    <h2>Selenium C# 101 Certification</h2>
+                    <p class="institution">LambdaTest</p>
+                    <p><strong>Issued:</strong> May 2023</p>
+                    <p><strong>Credential ID:</strong> SCS-T628P2</p>
+                    <a href="https://www.lambdatest.com/certified/SCS-T628P2">Certficate</a>
+
+                </div>
+                <div class="certification-card">
+                    <h2>Oracle PL/SQL</h2>
+                    <p class="institution">TestDome</p>
+                    <p><strong>Issued:</strong> Apr 2023</p>
+                    <p><strong>Credential ID:</strong> f070034b5f7d48aebea61e538e540d5f</p>
+                    <a href="https://www.testdome.com/certificates/f070034b5f7d48aebea61e538e540d5f">Certficate</a>
+                </div>
+                <div class="certification-card">
+                    <h2>Software Engineer Intern</h2>
+                    <p class="institution">HackerRank</p>
+                    <p><strong>Issued:</strong> Mar 2024</p>
+                    <p><strong>Credential ID:</strong> 1cd38e7ee7f4</p>
+                    <a href="https://www.hackerrank.com/certificates/1cd38e7ee7f4">Certficate</a>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
     </div>
     <script src="app.js"></script>
     <script src="canvas.js"></script>

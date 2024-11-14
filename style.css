@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
 html,
 body {
     overflow: visible;
@@ -25,7 +33,7 @@ canvas {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: max-content;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,7 +169,7 @@ nav {
 .personal-details::before {
     transform: scaleX(0);
     transform-origin: bottom;
-    
+
 }
 
 .personal-details:hover::before {
@@ -624,3 +632,250 @@ input:checked+label:after {
     font-weight: 600;
     color: rgba(212, 176, 14, 0.959);
 }
+
+.about-me {
+    margin-top: 35px;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    background: #001d3d;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.about-me h1 {
+    font-size: 2em;
+    color: #4A90E2;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    pointer-events: all;
+
+}
+
+.about-me a {
+    color: #687df5;
+    text-decoration: none;
+    font-weight: bold;
+    pointer-events: all;
+
+}
+
+.about-me a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #dfc56f;
+    text-decoration: underline;
+}
+
+.contact-info a:hover {
+    color: #4A90E2;
+}
+
+
+
+.experienceSection,
+.educationSection,
+.certificationsSection,
+.ProjectsSection {
+    margin-top: 40px;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+}
+
+.experience-card {
+    background: #001d3d;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1400px;
+    color: #ffc300;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.experience-header img {
+    border-radius: 50%;
+    width: 100px;
+    margin: -2px;
+}
+
+.content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+}
+
+.link p {
+    pointer-events: all;
+
+    margin-top: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.link p:hover {
+    color: #ffd60a;
+
+}
+
+.position p {
+    letter-spacing: 1px;
+}
+
+.experience-card h3 {
+    font-size: 1.6rem;
+    color: #ffd60a;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.experience-card a {
+    pointer-events: all;
+
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+.experience-card .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #6ddc5b;
+    color: #000;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Divider line for sections */
+.experience-card .divider {
+    height: 2px;
+    background-color: #ffd60a;
+    margin: 15px 0;
+    opacity: 0.7;
+}
+
+/* Button */
+.experience-card .read-more-button {
+    display: inline-block;
+    background-color: #6ddc5b;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.experience-card .read-more-button:hover {
+    background-color: #299414;
+    transform: translateY(-3px);
+}
+
+
+h1 {
+    color: #299414;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #003566;
+    font-size: 1.5em;
+}
+
+
+
+.portfolio {
+    position: relative;
+}
+
+.educationSection,
+.certificationsSection ,
+.ProjectsSection{
+    width: 100%;
+    max-width: 1400px;
+}
+
+.education-card,
+.certification-card {
+    background: #001d3d;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    max-width: 1400px;
+    color: #ffc300;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.education-card h2,
+.certification-card h2 {
+    color: #FFFFFF;
+}
+
+.certification-card a {
+    pointer-events: all;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.certification-card p {
+    max-width: 50% !important;
+}
+
+.certification-card strong {
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+
+.certificatesgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr)); /* Responsive grid with minimum width of 300px per item */
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
